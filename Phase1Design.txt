@@ -1,0 +1,12 @@
+When the user logs onto the website, I want there to be a super simple interface.
+
+First, the user will see two buttons: buy or sell.
+The user will then be sent to the respective page.
+
+First, let's discuss the buyer page.
+If the user is a buyer, they will see a list of auction items. Every auction item will have 3 buttons: comment, up-vote, bid.
+The commenting and bid options are self-explanatory. The up-vote option, however, will allow users to share their interest in certain items.
+If the user clicks "comment" or "bid," a respective window will pop up.
+If the user clicks "up-vote," they will get confirmation that the item has been up-voted.
+When an auction ends, the winner of the item will be sent an email, confirming their win.
+Information about other users, other than the highest bid, will not be shown.
