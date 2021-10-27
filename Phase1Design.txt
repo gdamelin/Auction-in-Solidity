@@ -10,3 +10,14 @@ If the user clicks "comment" or "bid," a respective window will pop up.
 If the user clicks "up-vote," they will get confirmation that the item has been up-voted.
 When an auction ends, the winner of the item will be sent an email, confirming their win.
 Information about other users, other than the highest bid, will not be shown.
+
+Now, let's discuss the seller page.
+Two options will greet the user.
+One button will say "edit an existing item," and the other will say "sell a new item."
+If the user wants to edit an existing item, they will be asked to provide an item id and password.
+If the information is correct, the user will be directed to a new window where they can edit the photo, description, minimum price, etc.
+If the user wants to sell a new item, they will be directed to a new window where they can upload the photo, description, etc.
+
+Users will not be identified by user ids, user passwords, etc.
+Instead, auction items will be the "users," and each item will somehow be linked to the humans.
+Whether its through their crypto-wallets or other crypto-addresses, every item will be protected by an item id and password.
