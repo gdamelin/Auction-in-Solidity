@@ -1,0 +1,21 @@
+1. Website
+  A:
+    The index page will open to two buttons. Each button will be linked to a sidepage and will load the side page
+    when you click on it.
+  B:
+    The "buyer" page will be a long list of each auction item. Each item will be grabbed from a database of AuctionObjects.
+    Each AuctionObject will have these variables:
+      minPrice
+      currentPrice
+      itemImage
+      itemDescription
+      minBid
+      auctionStartTime
+      auctionEndTime
+      sellerWalletID
+      endBuyerWalletID
+    The AuctionObject will be expanded upon further in a later section.
+    Each AuctionObject will be displayed by picture and item description in a 256px scaled box, adjusted for device size found through metadata.
+    The AuctionObjects will be sorted by soonest ending auction.
+    When an Auction ends, the AuctionObject is removed from the website.
+    
