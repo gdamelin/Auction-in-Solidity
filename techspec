@@ -18,4 +18,6 @@
     Each AuctionObject will be displayed by picture and item description in a 256px scaled box, adjusted for device size found through metadata.
     The AuctionObjects will be sorted by soonest ending auction.
     When an Auction ends, the AuctionObject is removed from the website.
+  C:
+    The "seller" page requires you to connect your wallet to MetaMask. Each wallet is a Wallet object in 
     
