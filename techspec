@@ -21,3 +21,30 @@
   C:
     The "seller" page requires you to connect your wallet to MetaMask. Each wallet is a Wallet object in 
     
+User
+  Variables:
+    walletID (str)
+    currentAuctionsSelling (arr of auctionObjects)
+    currentBids (arr of auctionObjects)
+   
+  Methods:
+    Constructor (walletID)
+      Behavior: initializes a new User object with a walletID and all other variables empty
+    Bid(price, AuctionObject) {
+      enters a new bid for the specified price on an AuctionObject
+      throws an error if:
+        this bid is less than the current highest bid
+        this bid is less than the minimum increment bid
+        this bid is on an AuctionObject that no longer exists
+    createNewAuction (minBid, minBidIncrement, hash, itemImage, itemDescription, auctionStartTime, auctionEndTime) {
+      initializes a new auctionObject with the above parameters.
+      required fields are minBid, minBidIncrement, hash, auctionStartTime, auctionEndTime
+      initialization sends a fee equal to 1% of the minBid price to this wallet address: 0xE2eE05AA87B74AE069F551259f015661981b97ee 
+      throws an error if:
+        minBid < 0
+        minBidIncrement < 10% of minBid
+        auctionStartTime < auctionEndTime
+        auctionStartTime refers to a block that has already been mined
+        auctionEndTime refers to a block that has already been minded
+      
+      
