@@ -30,12 +30,14 @@ User
   Methods:
     Constructor (walletID)
       Behavior: initializes a new User object with a walletID and all other variables empty
+      
     Bid(price, AuctionObject) {
       enters a new bid for the specified price on an AuctionObject
       throws an error if:
         this bid is less than the current highest bid
         this bid is less than the minimum increment bid
         this bid is on an AuctionObject that no longer exists
+        
     createNewAuction (minBid, minBidIncrement, hash, itemImage, itemDescription, auctionStartTime, auctionEndTime) {
       initializes a new auctionObject with the above parameters.
       required fields are minBid, minBidIncrement, hash, auctionStartTime, auctionEndTime
@@ -45,6 +47,26 @@ User
         minBidIncrement < 10% of minBid
         auctionStartTime < auctionEndTime
         auctionStartTime refers to a block that has already been mined
-        auctionEndTime refers to a block that has already been minded
-      
-      
+        auctionEndTime refers to a block that has already been mined
+        
+AuctionObject
+  Variables:
+    minBid (double)
+    minBidIncrement (double)
+    hash (str)
+    itemImage (jpg)
+    itemDescription (str)
+    auctionStartTime (block address)
+    auctionEndTime (block address)
+  
+  Methods:
+    Constructor (minBid, minBidIncrement, hash, auctionStartTime, auctionEndTime) {
+      initializes an AuctionObject with the parameters above
+      sends 1% of minBid to 
+      throws an error if
+        minBid < 0
+        minBidIncrement invalid
+        auctionStartTime refers to a mined block
+        auctionEndTime refers to a mined block
+        auctionStartTime > auctionEndTime
+        invalid funds to start auction
