@@ -1,0 +1,10 @@
+Complex task: If the user wants to edit an existing item, they will be asked to provide an item id and password.
+
+We can break this down into several smaller tasks:
+1. If the item is editable, notify users of this fact (Event).
+2. require item id (Modifier).
+3. require password (Modifier).
+4. Edit item
+5. Note/notify item edit (another Event).
+
+This one thing just got broken down into 5 parts. boom.
